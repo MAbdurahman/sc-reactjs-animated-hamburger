@@ -1,8 +1,16 @@
+
+import {Outlet} from 'react-router-dom';
+import GlobalStyled from '../styles/Global.styled.jsx';
+import Navbar from '../components/navigation/Navbar/index.jsx';
+
+
 export default function App() {
 
    return (
-      <div>
-         <h2>App</h2>
+      <div className='utils-container-fluid'>
+         <Navbar />
+         <Outlet />
+         <GlobalStyled />
       </div>
 
    );
