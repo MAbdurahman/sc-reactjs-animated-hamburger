@@ -24,6 +24,136 @@ export const GlobalStyles = createGlobalStyle`
       outline: none;
    }
 
+   :root {
+      --font-body: 'Mulish', sans-serif;
+
+      /************************* typography scale *************************/
+      --font-size-heading-01: 3.815rem;
+      --font-size-heading-02: 3.052rem;
+      --font-size-heading-03: 2.441rem;
+      --font-size-heading-04: 1.953rem;
+      --font-size-heading-05: 1.563rem;
+      --font-size-heading-06: 1.25rem;
+      --font-size-paragraph: 1rem;
+      --font-size-small: 0.8rem;
+      /************************* font weight *************************/
+      --font-weight-light: 300;
+      --font-weight-normal: 400;
+      --font-weight-medium: 600;
+      --font-weight-semibold: 700;
+      --font-weight-bold: 800;
+      --font-weight-black: 900;
+      /************************* colors *************************/
+      /* primary colors */
+      /*--color-green-01-025: hsl(122.45, 37.4%, 74.31%);
+      --color-green-01-050: hsl(122.42, 39.44%, 49.22%);*/
+
+      --color-bright-blue-01-000: hsl(196, 77%, 95%);
+      --color-bright-blue-01-100: hsl(196, 77%, 90%);
+      --color-bright-blue-01-200: hsl(196, 77%, 80%);
+      --color-bright-blue-01-300: hsl(196, 77%, 75%);
+      --color-bright-blue-01-400: hsl(196, 77%, 70%);
+      --color-bright-blue-01-500: hsl(196, 77%, 65%);
+      --color-bright-blue-01-600: hsl(196, 77%, 55%);
+      --color-bright-blue-01-700: hsl(196, 77%, 50%);
+      --color-bright-blue-01-800: hsl(196, 77%, 45%);
+      --color-bright-blue-01-900: hsl(196, 77%, 35%);
+      /* neutral colors */
+      --color-neutral-000: hsl(196, 0%, 98%);
+      --color-neutral-100: hsl(196, 0%, 88%);
+      --color-neutral-200: hsl(196, 0%, 78%);
+      --color-neutral-300: hsl(196, 0%, 68%);
+      --color-neutral-400: hsl(196, 0%, 58%);
+      --color-neutral-500: hsl(196, 0%, 48%);
+      --color-neutral-600: hsl(196, 0%, 38%);
+      --color-neutral-700: hs1(196, 0%, 28%);
+      --color-neutral-800: hsl(196, 0%, 18%);
+      --color-neutral-900: hsl(196, 0%, 10%);
+      /* augmented colors */
+      --color-augmented-000: hsl(196, 12%, 95%);
+      --color-augmented-100: hsl(196, 12%, 85%);
+      --color-augmented-200: hsl(196, 12%, 75%);
+      --color-augmented-300: hsl(196, 15%, 65%);
+      --color-augmented-400: hsl(196, 15%, 55%);
+      --color-augmented-500: hsl(196, 15%, 45%);
+      --color-augmented-600: hsl(196, 15%, 35%);
+      --color-augmented-700: hsl(196, 20%, 25%);
+      --color-augmented-800: hsl(196, 25%, 15%);
+      --color-augmented-900: hsl(196, 30%, 15%);
+      /************************* semantic colors *************************/
+      /* semantic inform colors */
+      --color-semantic-inform-400: hsl(215, 96%, 33%);
+      --color-semantic-inform-300: hsl(215, 96%, 38%);
+      --color-semantic-inform-200: hsl(215, 96%, 43%);
+      --color-semantic-inform-100: hsl(215, 96%, 48%);
+      /* semantic success colors */
+      --color-semantic-success-400: hsl(100, 96%, 33%);
+      --color-semantic-success-300: hsl(100, 96%, 38%);
+      --color-semantic-success-200: hsl(100, 96%, 43%);
+      --color-semantic-success-100: hsl(100, 96%, 48%);
+      /* semantic warn colors */
+      --color-semantic-warn-400: hsl(44.94, 96%, 50%);
+      --color-semantic-warn-300: hsl(44.94, 96%, 55%);
+      --color-semantic-warn-200: hsl(44.94, 96%, 60%);
+      --color-semantic-warn-100: hsl(44.94, 96%, 65%);
+      --color-semantic-warn-000: hsl(42.9, 74.4%, 49.02%);
+      /* semantic extreme warn colors */
+      --color-semantic-extreme-warn-400: hsl(28.47, 96%, 50%);
+      --color-semantic-extreme-warn-300: hsl(28.47, 96%, 55%);
+      --color-semantic-extreme-warn-200: hsl(28.47, 96%, 60%);
+      --color-semantic-extreme-warn-100: hsl(28.47, 96%, 65%);
+      /* semantic alert colors */
+      --color-semantic-alert-400: hsl(0, 96%, 33%);
+      --color-semantic-alert-300: hsl(0, 96%, 38%);
+      --color-semantic-alert-200: hsl(0, 96%, 43%);
+      --color-semantic-alert-100: hsl(0, 96%, 48%);
+
+
+      --ease-basic-01: cubic-bezier(0.26, 0.1, 0.27, 1.55);
+      --ease-basic-02: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+      --ease: cubic-bezier(0.19, 0.08, 0.46, 0.99);
+      --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+      --ease-in: cubic-bezier(0.33, 0.02, 0.84, 0.75);
+      --ease-out: cubic-bezier(0.05, 0.21, 0.66, 0.98);
+      --ease-in-out: cubic-bezier(0.38, 0, 0.57, 0.99);
+      --ease-linear: cubic-bezier(0.19, 0.08, 0.84, 0.75);
+      --ease-smooth: cubic-bezier(0.1, 0.7, 0.6, 0.9);
+      --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+      --ease-snappy-01: cubic-bezier(0.5, 0, 0.4, 0.98);
+      --ease-snappy-02: cubic-bezier(.17, .67, .83, .67);
+
+      --radius-000: 1px;
+      --radius-100: 2px;
+      --radius-200: 3px;
+      --radius-300: 5px;
+      --radius-400: 8px;
+      --radius-500: 13px;
+      --radius-600: 21px;
+      --radius-700: 34px;
+      --radius-800: 55px;
+      --radius-900: 50%;
+
+      --breakpoint-xxs: 20rem; /*320px */
+      --breakpoint-xs: 30rem; /*480px */
+      --breakpoint-sm: 40rem; /*640px */
+      --breakpoint-md: 48rem; /*768px */
+      --breakpoint-lg: 64rem; /*1024px;*/
+      --breakpoint-xl: 80rem; /*1280px;*/
+      --breakpoint-2xl: 96rem; /*1536px;*/
+      --breakpoint-3xl: 120rem; /*1920px;*/
+
+
+      /**************** letter spacing ****************/
+      --letter-spacing-100: 1px;
+      --letter-spacing-200: 2px;
+      --letter-spacing-300: 3px;
+      --letter-spacing-400: 5px;
+      --letter-spacing-minus-100: -1px;
+      --letter-spacing-minus-200: -2px;
+      --letter-spacing-minus-300: -3px;
+      --letter-spacing-minus-400: -5px;
+   }
+
    html {
       height: 100dvh;
       width: 100dvw;
@@ -40,6 +170,7 @@ export const GlobalStyles = createGlobalStyle`
       }
 
    }
+
    @media screen and (max-width: 390px) {
       html {
          font-size: 50%;
@@ -64,7 +195,7 @@ export const GlobalStyles = createGlobalStyle`
       color: #333;
       background-color: #ddd;
    }
-   
+
    /*===============================================================
           Typography Scale - 1.250 - Major Third
    ==================================================================*/
@@ -122,6 +253,7 @@ export const GlobalStyles = createGlobalStyle`
       width: 100%;
       height: auto;
    }
+
    ul {
       list-style: none;
    }
@@ -136,13 +268,13 @@ export const GlobalStyles = createGlobalStyle`
       cursor: pointer;
       opacity: 1;
    }
-   
+
    .logo_brand {
       display: flex;
       flex-direction: row;
       align-items: center;
       gap: 0.5rem;
-      color: white;  
+      color: white;
    }
 
    /*===============================================================
@@ -150,8 +282,8 @@ export const GlobalStyles = createGlobalStyle`
    ==================================================================*/
    .utils-container-fluid {
       width: 100%;
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 0;
+      margin-right: 0;
       padding-left: 16px;
       padding-right: 16px;
    }
@@ -169,21 +301,25 @@ export const GlobalStyles = createGlobalStyle`
          max-width: 544px;
       }
    }
+
    @media (min-width: 768px) {
       .utils-container {
          max-width: 720px;
       }
    }
+
    @media (min-width: 992px) {
       .utils-container {
          max-width: 960px;
       }
    }
+
    @media (min-width: 1200px) {
       .utils-container {
          max-width: 1144px;
       }
    }
+
    @media (min-width: 1400px) {
       .utils-container {
          max-width: 1320px;
@@ -191,7 +327,15 @@ export const GlobalStyles = createGlobalStyle`
    }
 
    .navbar-section {
-       background-color: hsl(210, 0%, 18%);
+      background-color: hsl(210, 0%, 18%);
+   }
+
+   .logo__brand--color {
+
+      font-size: 40px;
+      font-weight: 800;
+      color: hsl(198, 77%, 55%);
+
    }
 `
 export default GlobalStyles;

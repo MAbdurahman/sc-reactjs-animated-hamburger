@@ -148,8 +148,8 @@ a:hover {
 
 .utils-container-fluid {
    width: 100%;
-   margin-left: auto;
-   margin-right: auto;
+   margin-left: 0;
+   margin-right: 0;
    padding-left: 16px;
    padding-right: 16px;
 }
@@ -187,3 +187,10 @@ a:hover {
       max-width: 1320px;
    }
 }
+
+/*
+.navbar-container {
+   width: 100%;
+   border-bottom: 2px solid #f1f1f1;
+   background-color: #333333;
+}*/
